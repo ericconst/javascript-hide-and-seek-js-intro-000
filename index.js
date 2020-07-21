@@ -23,5 +23,7 @@ function deepestChild(){
     if (typeof main[i] = "object"){
       continue
     }
-  return main
+    else{
+      return main[i]
+    }
 }
