@@ -17,4 +17,13 @@ function increaseRankBy(n){
   }
 }
 
-parseInt(`${main[i].innerHTML}`, 10) + n;
+function deepestChild(){
+  const main = document.querySelector('#grand-node');
+  for (let i=0 ; i < main.length ; i++){
+    if (main.children[i].length > 1){
+      main.removeChild(main.children[i]);
+    }
+  }
+  return main
+}
+
