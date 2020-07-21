@@ -20,7 +20,7 @@ function increaseRankBy(n){
 function deepestChild(){
   const main = document.querySelector('#grand-node');
   for (let i=0 ; i < main.length ; i++){
-    if (typeof main[i] === "object"){
+    if (typeof(main[i]) === "object"){
       continue
     }
     else{
